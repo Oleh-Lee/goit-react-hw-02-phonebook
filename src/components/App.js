@@ -23,7 +23,7 @@ class App extends Component {
     ?this.setState(prevstate => ({
       contacts: [...prevstate.contacts, data]
     }))
-    :alert("nononon")
+    :alert(`${data.name} is already in contact`);
   };
 
   deleteContact = e => {
